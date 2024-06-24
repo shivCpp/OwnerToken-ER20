@@ -31,7 +31,7 @@ This repository contains the Solidity smart contract code for the CoderCoin (CDC
 ## Usage
 to uses this contract or exectue you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., OwnToken.sol). Copy and paste the following code into the file:
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., TokenOwner.sol). Copy and paste the following code into the file:
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -76,9 +76,9 @@ contract MyToken is ERC20 {
 
 
 ```
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.25" (or another compatible version), and then click on the "Compile OwnToken.sol" button.
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.25" (or another compatible version), and then click on the "Compile TokenOwner.sol" button.
 
-Once the code is compiled, Select "Injected provider" as the environment (assuming you have a wallet like MetaMask connected to Remix) and then you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "OwnToken" contract from the dropdown menu, and then click on the "Deploy" button.
+Once the code is compiled, Select "Injected provider" as the environment (assuming you have a wallet like MetaMask connected to Remix) and then you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "TokenOwner" contract from the dropdown menu, and then click on the "Deploy" button.
 
 Once the contract is deployed, you can use the deployed contract interface to call the mint, burn, transfer and other ERC20 Standart main functions.In this you can tranfer token from your own wallet to other address.You can enter addresses and values to test the functionality. After entering data, click on "transact" button to execute the function and mint token and similarly burn , tranfer and do testing. 
 
