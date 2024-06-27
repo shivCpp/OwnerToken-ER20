@@ -33,7 +33,7 @@ contract MyToken is ERC20 {
         supplyTotal -= amount;
     }
 
-    function transferCoin(address to, uint256 amount) public{
-        _transfer(msg.sender, to, amount);
+    function transferCoin(address from , address to, uint256 amount) public{
+        _transfer(from, to, amount);
     }
 }
