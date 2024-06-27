@@ -35,7 +35,7 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 // Import the ERC20 standard library from OpenZeppelin
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -69,8 +69,8 @@ contract MyToken is ERC20 {
         supplyTotal -= amount;
     }
 
-    function transferCoin(address to, uint256 amount) public{
-        _transfer(msg.sender, to, amount);
+    function transferCoin(address from , address to, uint256 amount) public{
+        _transfer(from, to, amount);
     }
 }
 
